@@ -5,7 +5,7 @@ const customer = {
   lastName: "Walker",
   userEmail: " Naruto28@gmail.com ",
   password: "4566783ghs",
-  tel: +7698765432,
+  tel: "+7698765432",
   userAdress: {
     city: "NY",
     str: "Riversayd Drayv",
@@ -16,11 +16,9 @@ const customer = {
   changeTel(newTel) {
     this.tel = newTel;
   },
-  getisMale: function () {
-    return "male" | "female";
-  },
+  gender: "male",
 };
-console.log(customer);
+console.log("customer", customer);
 
 /*customer.changeTel(prompt("new tel"));
 console.log(customer);
@@ -30,5 +28,17 @@ document.write(
 );
 
 */
-const isMale = customer.getisMale();
-console.log(isMale);
+console.log(customer.gender);
+delete customer.userAdress;
+console.log("customer", customer);
+
+const cat = {
+  name: "Murka",
+  color: "black",
+  isMale: false,
+  isFurnitureDemage: true,
+};
+
+for (key in cat) {
+  console.log("key", cat);
+}
