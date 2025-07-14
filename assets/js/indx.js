@@ -16,12 +16,19 @@ const customer = {
   changeTel(newTel) {
     this.tel = newTel;
   },
+  getisMale: function () {
+    return "male" | "female";
+  },
 };
-console.log("customer", customer);
+console.log(customer);
 
-customer.changeTel(prompt("new tel"));
+/*customer.changeTel(prompt("new tel"));
 console.log(customer);
 
 document.write(
   ` <p>${customer.userAdress.city}, ${customer.userAdress.str}, ${customer.userAdress.h}, ${customer.userAdress.country}</p>`
 );
+
+*/
+const isMale = customer.getisMale();
+console.log(isMale);
