@@ -50,34 +50,28 @@ function Book(author, title, year, publisher, prise) {
   this.bookOfprice = prise;
 }
 
-Book.prototype.changeprice = function (newPrice) {
+Book.prototype.changePrice = function (newPrice) {
   this.bookOfprise = newPrice;
 };
 
-Book.prototype.typename =
+/*Book.prototype.typename =
   "1230 Avenue of the Americas, New York, NY 10020, USA";
-
-const book1 = new Book(
-  "Stephen King",
-  "Holly",
-  "2023",
-  "Simon & Schuster",
-  "100"
-);
+*/
+const book1 = new Book("Stephen King", "Holly", 2023, "Simon & Schuster", 100);
 const book2 = new Book(
   "Stephen King",
   "You like it darker",
-  "2024",
+  2024,
   "Simon & Schuster",
-  "100"
+  100
 );
-book2.changeprice("250");
+book2.changePrice(250);
 const book3 = new Book(
   "Stephen King",
   "The life of Chuck",
-  "2025",
+  2025,
   "Simon & Schuster",
-  "100"
+  100
 );
 
 console.log("book1", book1);
