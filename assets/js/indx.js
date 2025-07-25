@@ -51,7 +51,7 @@ function Book(author, title, year, publisher, prise) {
 }
 
 Book.prototype.changeprice = function (newPrice) {
-  this.prise = newPrice;
+  this.bookOfprise = newPrice;
 };
 
 Book.prototype.typename =
