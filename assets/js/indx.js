@@ -42,16 +42,16 @@ for (let key in cat) {
   console.log(`cat : ${key} = ${cat[key]}`);
 }
 
-function Book(author, title, year, publisher, prise) {
+function Book(author, title, year, publisher, price) {
   this.authorName = author;
   this.bookTitle = title;
   this.yearOfpublication = year;
   this.publisherBook = publisher;
-  this.bookOfprice = prise;
+  this.bookOfprice = price;
 }
 
 Book.prototype.changePrice = function (newPrice) {
-  this.bookOfprise = newPrice;
+  this.bookOfprice = newPrice;
 };
 
 /*Book.prototype.typename =
